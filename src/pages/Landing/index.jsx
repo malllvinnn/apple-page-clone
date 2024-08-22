@@ -11,7 +11,10 @@ const Landing = () => {
           of={DATA_PRODUCTS}
           render={(item, index) => (
             <li key={index}>
-              <h3>{item.product_name}</h3>
+              <h3 className="text-red-500">{item.product_name}</h3>
+              {item.tag.map((t, index) => (
+                <p key={index}>{t.title}</p>
+              ))}
             </li>
           )}
         />
