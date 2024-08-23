@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/Helvetica.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("./assets/fonts/Helvetica-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Bold Oblique";
+  src: url("./assets/fonts/Helvetica-BoldOblique.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Compressed";
+  src: url("./assets/fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url("./assets/fonts/helvetica-light.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Oblique";
+  src: url("./assets/fonts/Helvetica-Oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Rounded Bold";
+  src: url("./assets/fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
