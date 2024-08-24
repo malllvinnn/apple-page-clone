@@ -1,5 +1,6 @@
 const LIST_CONTENT_1 = [
   {
+    id: 1,
     title: "iPhone",
     desc: "Sistem kamera tercanggih kami.\n Chip ultra cepat. Dan USB-C.",
     img_link: "/assets/hero_iphone.jpg",
@@ -9,6 +10,7 @@ const LIST_CONTENT_1 = [
 
 const LIST_CONTENT_2 = [
   {
+    id: 2,
     title: "iPad Pro",
     desc: "Tipis luar biasa. Luar biasa bertenaga.",
     img_link: "/assets/hero_ipad.jpg",
@@ -18,6 +20,7 @@ const LIST_CONTENT_2 = [
 
 const LIST_CONTENT_3 = [
   {
+    id: 3,
     title: "WATCH",
     series: "SERIES 9",
     desc: "Lebih pintar. Lebih cerah. Lebih perkasa.",

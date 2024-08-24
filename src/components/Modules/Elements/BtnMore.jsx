@@ -1,9 +1,16 @@
-const BtnMore = ({ py = "py-1", tsz = "text-sm" }) => {
+const BtnMore = ({
+  py = "py-1",
+  tsz = "text-sm",
+  bg = "bg-blue-500",
+  brc = "border-blue-500",
+  tc = "text-white",
+  result = "Selengkapnya",
+}) => {
   return (
     <button
-      className={`${py} ${tsz} bg-blue-500 px-5 rounded-3xl border-2 border-blue-500 transition-all`}
+      className={`${py} ${tsz} ${bg} ${brc} ${tc} px-5 rounded-3xl border-2 transition-all`}
     >
-      Selengkapnya
+      {result}
     </button>
   );
 };
