@@ -1,30 +1,39 @@
 import EachUtils from "../../../utils/EachUtils";
-import { LIST_CONTENT_1, LIST_CONTENT_2 } from "../../../constants/listContent";
+import HeroContent from "../Elements/HeroContent";
+
+import {
+  LIST_CONTENT_1,
+  LIST_CONTENT_2,
+  LIST_CONTENT_3,
+} from "../../../constants/listHero";
 
 const Heroes = () => {
   return (
-    <>
+    <section className="flex flex-col gap-2">
+      {/* Hero-1 */}
       <EachUtils
         of={LIST_CONTENT_1}
         render={(item, index) => (
-          <section key={index}>
-            <img
-              src="/assets/hero_iphone.jpg"
-              alt="iPhone"
-              className="absolute object-cover h-[80vh]"
-            />
-            <div className="absolute text-white flex flex-col justify-center items-center bg-red-400 w-full">
-              <h1>{item.title}</h1>
-              <p>{item.desc}</p>
-              <div>
-                <button>Selengkapnya</button>
-                <button>Beli iPhone</button>
-              </div>
-            </div>
-          </section>
+          <HeroContent index={index} item={item} pt="pt-24" />
         )}
       />
-    </>
+
+      {/* Hero-2 */}
+      <EachUtils
+        of={LIST_CONTENT_2}
+        render={(item, index) => (
+          <HeroContent index={index} item={item} pt="pt-10" />
+        )}
+      />
+
+      {/* Hero-3 */}
+      <EachUtils
+        of={LIST_CONTENT_3}
+        render={(item, index) => (
+          <HeroContent index={index} item={item} pt="pt-10" />
+        )}
+      />
+    </section>
   );
 };
 
