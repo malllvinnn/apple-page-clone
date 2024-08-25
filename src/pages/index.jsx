@@ -4,7 +4,7 @@ import MainLayouts from "../components/Layouts/DefaultLayout";
 import Heroes from "../components/Modules/Heroes";
 import Promo from "../components/Modules/Promo";
 import AppleTv from "../components/Modules/AppleTv";
-// import Footer from "../components/Modules/Footer";
+import Footer from "../components/Modules/Footer";
 
 const Landing = () => {
   return (
@@ -15,7 +15,7 @@ const Landing = () => {
         <Promo />
         <AppleTv />
       </MainLayouts>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

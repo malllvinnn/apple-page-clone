@@ -110,7 +110,7 @@ const AppleTv = () => {
               key={index}
               onClick={() => setIsSlide(index)}
               className={`w-2 h-2 rounded-full ${
-                isSlide === index ? "bg-slate-700" : "bg-slate-400"
+                isSlide === index ? "bg-[#333333]" : "bg-[#949494]"
               }`}
             ></button>
           )}

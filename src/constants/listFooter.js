@@ -1,4 +1,15 @@
-const LIST_FOOTER = [
+export const LANGGANAN = "Langganan diperlukan untuk Apple TV+";
+
+export const RITAIL = { 1: "Temukan retailer", 2: "di dekat Anda" };
+
+export const COPYRIGHT = [
+  {
+    year: 2024,
+    copy_right: "@malllvinnn. All rights reserved.",
+  },
+];
+
+export const LIST_FOOTER = [
   {
     title: "Belanja dan Belajar",
     list: [
