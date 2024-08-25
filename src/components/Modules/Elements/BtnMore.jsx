@@ -8,7 +8,7 @@ const BtnMore = ({
 }) => {
   return (
     <button
-      className={`${py} ${tsz} ${bg} ${brc} ${tc} px-5 rounded-3xl border-2 transition-all`}
+      className={`${py} ${tsz} ${bg} ${brc} ${tc} px-5 rounded-3xl border-2 transition-all hover:brightness-125`}
     >
       {result}
     </button>

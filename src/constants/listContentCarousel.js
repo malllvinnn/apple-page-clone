@@ -1,0 +1,51 @@
+export const LIST_CONTENT_CARAOUSEL = [
+  {
+    id: 1,
+    img_url: "/assets/the-insigators.jpg",
+    title: "The Insigators",
+    desc: "Perampokan terkacau yang pernah ada.",
+    genre: "Laga",
+  },
+  {
+    id: 2,
+    img_url: "/assets/pachinko.jpg",
+    title: "Pachinko",
+    desc: "Musim baru",
+    genre: "Drama",
+  },
+  {
+    id: 3,
+    img_url: "/assets/bad-monkey.jpg",
+    title: "Bad Monkey",
+    desc: "Sisi gelap surga tropis.",
+    genre: "Komedi",
+  },
+  {
+    id: 4,
+    img_url: "/assets/lady-in-the-lake.jpg",
+    title: "Lady in The Lake",
+    desc: "Natalie Potman & Moses Ingram bintangi thriller noir visioner.",
+    genre: "Thriller",
+  },
+  {
+    id: 5,
+    img_url: "/assets/time-bandits.jpg",
+    title: "Time Bandits",
+    desc: "Sejarah baru saja dibajak.",
+    genre: "Petualangan",
+  },
+  {
+    id: 6,
+    img_url: "/assets/presumed-innocent.jpg",
+    title: "Presumed Innocent",
+    desc: "Serial Baru.",
+    genre: "Kriminalitas",
+  },
+  {
+    id: 7,
+    img_url: "/assets/sunny.jpg",
+    title: "Sunny",
+    desc: "Anda adalah ingatan pertamanya.",
+    genre: "Misteri",
+  },
+];
