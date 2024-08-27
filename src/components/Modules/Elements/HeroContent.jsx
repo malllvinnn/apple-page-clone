@@ -6,7 +6,7 @@ import BrandDesc from "./BrandDesc";
 
 const HeroContent = ({ index, item, pt = "pt-8" }) => {
   return (
-    <div key={index} className="h-[580px] bg-yellow-300 relative">
+    <div key={index} className="h-[580px] relative">
       <img
         src={item.img_link}
         alt="iPhone"
