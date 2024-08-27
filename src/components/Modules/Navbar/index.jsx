@@ -9,11 +9,13 @@ import { GoSearch } from "react-icons/go";
 import { LIST_NAVBAR } from "../../../constants/listNavbar";
 import { useAtom } from "jotai";
 import { hamburgerAtom } from "../../../jotai/atom";
+import { GrFormNext } from "react-icons/gr";
 
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(null);
   const { y } = useWindowScroll();
   const [isHamburger] = useAtom(hamburgerAtom);
+  const [isHover, setIsHover] = useState(null);
 
   useEffect(() => {
     if (y == 0) {
@@ -22,6 +24,10 @@ const Navbar = () => {
       setIsScroll(false);
     }
   }, [y]);
+
+  // const hoverNavbar = () => {
+  //   setIsHover(!isHover);
+  // };
 
   return (
     <header className={`fixed z-50 w-full`}>
@@ -43,20 +49,31 @@ const Navbar = () => {
         </ul>
       </nav>
       <motion.div
-        initial={{ y: -735 }}
+        initial={{ y: -775 }}
         animate={{
-          y: isHamburger ? 0 : -735,
+          y: isHamburger ? 0 : -775,
         }}
         transition={{ duration: 0.5 }}
         className={`${
           isScroll ? "bg-[#1d1d1f]/80" : "bg-[#1d1d1f]/70"
-        } absolute top-0 left-0 w-full flex flex-col pt-12 gap-2 pr-12 pl-12 pb-96 text-[#dadada] font-bold text-2xl backdrop-blur-lg transition-colors`}
+        } absolute top-0 left-0 w-full flex flex-col pt-12 gap-2 pr-4 pl-12 pb-96 text-[#dadada] font-bold text-3xl backdrop-blur-lg transition-colors`}
       >
         <EachUtils
           of={LIST_NAVBAR}
           render={(item, index) => (
-            <a key={index} href="#">
+            <a
+              key={index}
+              href="#"
+              onMouseEnter={() => setIsHover(index)}
+              onMouseLeave={() => setIsHover(null)}
+              className="flex justify-between items-center hover:brightness-150"
+            >
               {item.title}
+              <GrFormNext
+                className={`${
+                  isHover === index ? "visible" : "invisible"
+                } transition-all`}
+              />
             </a>
           )}
         />
