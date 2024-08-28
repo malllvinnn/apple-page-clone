@@ -28,29 +28,42 @@ const AppleTv = () => {
     isSlide === 0 ? LIST_CONTENT_CARAOUSEL.length - 1 : isSlide - 1;
 
   return (
-    <section>
-      <div className="carousel w-full transition-all flex justify-center relative overflow-hidden">
+    <section className="h-[495px] sm:h-auto">
+      <div className="carousel w-full transition-all flex justify-center relative overflow-hidden h-full">
         <EachUtils
           of={LIST_CONTENT_CARAOUSEL}
           render={(item, index) => (
             <>
               {isSlide === index && (
                 <>
-                  <div className="absolute -right-1/2 z-10">
+                  <div className="absolute -right-1/2 z-10 h-full">
                     {/* Gambar index berikutnya sebagai background */}
-                    <img
-                      src={LIST_CONTENT_CARAOUSEL[nextSlide].img_url}
-                      alt={LIST_CONTENT_CARAOUSEL[nextSlide].title}
-                      className="w-full h-full object-cover opacity-60"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 640px)"
+                        srcSet={LIST_CONTENT_CARAOUSEL[nextSlide].img_url}
+                      />
+                      <img
+                        src={LIST_CONTENT_CARAOUSEL[nextSlide].img_url_sm}
+                        alt={LIST_CONTENT_CARAOUSEL[nextSlide].title}
+                        className="w-full h-full object-cover opacity-60"
+                      />
+                    </picture>
                   </div>
-                  <div className="absolute -left-1/4 z-10">
-                    {/* Gambar index berikutnya sebagai background */}
-                    <img
-                      src={LIST_CONTENT_CARAOUSEL[prevSlide].img_url}
-                      alt={LIST_CONTENT_CARAOUSEL[prevSlide].title}
-                      className="w-full h-full object-cover opacity-60"
-                    />
+                  <div className="absolute -left-1/4 z-10 h-full">
+                    {/* Gambar index prev sebagai background */}
+
+                    <picture>
+                      <source
+                        media="(min-width: 640px)"
+                        srcSet={LIST_CONTENT_CARAOUSEL[prevSlide].img_url}
+                      />
+                      <img
+                        src={LIST_CONTENT_CARAOUSEL[prevSlide].img_url_sm}
+                        alt={LIST_CONTENT_CARAOUSEL[prevSlide].title}
+                        className="w-full h-full object-cover opacity-60"
+                      />
+                    </picture>
                   </div>
                 </>
               )}
@@ -60,11 +73,14 @@ const AppleTv = () => {
                   isSlide === index ? "block" : "hidden"
                 }`}
               >
-                <img
-                  src={item.img_url}
-                  alt={item.title}
-                  className="w-full translate-x-[12%] border-x-8 border-white"
-                />
+                <picture>
+                  <source media="(min-width: 640px)" srcSet={item.img_url} />
+                  <img
+                    src={item.img_url_sm}
+                    alt={item.title}
+                    className="w-full translate-x-[12%] border-x-8 border-white"
+                  />
+                </picture>
                 <div className="absolute left-[62.5%] -translate-x-1/2 top-1/2 -translate-y-1/2 flex transform justify-between w-[125%] h-full">
                   <button
                     onClick={handlePrev}
@@ -72,20 +88,26 @@ const AppleTv = () => {
                   >
                     <GrFormPrevious size={100} />
                   </button>
-                  <div className="flex w-full items-end py-16 px-24">
-                    <div className="flex justify-center items-center gap-6">
+                  <div className="flex justify-center sm:justify-start  w-full items-end py-8 sm:py-6 lg:py-16 px-4 sm:px-5 lg:px-24">
+                    <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-2 sm:gap-6 text-center sm:text-start">
                       <BtnMore
                         result="Streaming Sekarang"
                         bg="bg-white"
                         brc="border-white"
                         tc="text-black"
-                        tsz="text-lg"
+                        tsz="text-md"
                         py="py-2"
                       />
-                      <div className="flex gap-2 text-white justify-center items-center">
-                        <h3 className="font-bold text-xl">{item.genre}</h3>
-                        <span className="font-bold text-xl">·</span>
-                        <p className="font-normal text-xl">{item.desc}</p>
+                      <div className="flex flex-col sm:flex-row sm:gap-2 text-white justify-center items-center">
+                        <h3 className="font-bold text-lg sm:text-xl">
+                          {item.genre}
+                        </h3>
+                        <span className="font-bold text-xl hidden sm:block">
+                          ·
+                        </span>
+                        <p className="font-normal text-md sm:text-xl">
+                          {item.desc}
+                        </p>
                       </div>
                     </div>
                   </div>

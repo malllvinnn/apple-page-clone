@@ -4,6 +4,7 @@ const LIST_CONTENT_1 = [
     title: "iPhone",
     desc: "Sistem kamera tercanggih kami.\n Chip ultra cepat. Dan USB-C.",
     img_link: "/assets/hero_iphone.jpg",
+    img_link_sm: "/assets/hero_iphone_small.jpg",
     logo_brand: false,
   },
 ];
@@ -14,6 +15,7 @@ const LIST_CONTENT_2 = [
     title: "iPad Pro",
     desc: "Tipis luar biasa. Luar biasa bertenaga.",
     img_link: "/assets/hero_ipad.jpg",
+    img_link_sm: "/assets/hero_ipadpro_small.jpg",
     logo_brand: false,
   },
 ];
@@ -25,6 +27,7 @@ const LIST_CONTENT_3 = [
     series: "SERIES 9",
     desc: "Lebih pintar. Lebih cerah. Lebih perkasa.",
     img_link: "/assets/hero_apple_watch.jpg",
+    img_link_sm: "/assets/hero_apple_watch_small.jpg",
     logo_brand: true,
   },
 ];

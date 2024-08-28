@@ -2,6 +2,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 1,
     img_url: "/assets/the-insigators.jpg",
+    img_url_sm: "/assets/the-insigators-sm.jpg",
     title: "The Insigators",
     desc: "Perampokan terkacau yang pernah ada.",
     genre: "Laga",
@@ -9,6 +10,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 2,
     img_url: "/assets/pachinko.jpg",
+    img_url_sm: "/assets/pachinko-sm.jpg",
     title: "Pachinko",
     desc: "Musim baru",
     genre: "Drama",
@@ -16,6 +18,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 3,
     img_url: "/assets/bad-monkey.jpg",
+    img_url_sm: "/assets/bad-monkey-sm.jpg",
     title: "Bad Monkey",
     desc: "Sisi gelap surga tropis.",
     genre: "Komedi",
@@ -23,6 +26,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 4,
     img_url: "/assets/lady-in-the-lake.jpg",
+    img_url_sm: "/assets/lady-in-the-lake-sm.jpg",
     title: "Lady in The Lake",
     desc: "Natalie Potman & Moses Ingram bintangi thriller noir visioner.",
     genre: "Thriller",
@@ -30,6 +34,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 5,
     img_url: "/assets/time-bandits.jpg",
+    img_url_sm: "/assets/time-bandits-sm.jpg",
     title: "Time Bandits",
     desc: "Sejarah baru saja dibajak.",
     genre: "Petualangan",
@@ -37,6 +42,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 6,
     img_url: "/assets/presumed-innocent.jpg",
+    img_url_sm: "/assets/presumed-innocent-sm.jpg",
     title: "Presumed Innocent",
     desc: "Serial Baru.",
     genre: "Kriminalitas",
@@ -44,6 +50,7 @@ export const LIST_CONTENT_CARAOUSEL = [
   {
     id: 7,
     img_url: "/assets/sunny.jpg",
+    img_url_sm: "/assets/sunny-sm.jpg",
     title: "Sunny",
     desc: "Anda adalah ingatan pertamanya.",
     genre: "Misteri",

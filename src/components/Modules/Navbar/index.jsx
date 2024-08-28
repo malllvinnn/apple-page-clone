@@ -25,13 +25,11 @@ const Navbar = () => {
     }
   }, [y]);
 
-  // const hoverNavbar = () => {
-  //   setIsHover(!isHover);
-  // };
-
   return (
     <header className={`fixed z-50 w-full`}>
-      <nav className={`relative z-10 text-[#dadada] px-4 md:px-60 md:py-3`}>
+      <nav
+        className={`relative z-10 text-[#dadada] px-4 md:px-5 lg:px-60 md:py-3`}
+      >
         <ul className="flex gap-5 font-helvetica-light text-sm h-auto md:h-6 justify-between items-center relative z-20">
           {isHamburger ? <div></div> : <IoLogoApple size={20} />}
           <EachUtils
@@ -70,9 +68,7 @@ const Navbar = () => {
             >
               {item.title}
               <GrFormNext
-                className={`${
-                  isHover === index ? "visible" : "invisible"
-                } transition-all`}
+                className={isHover === index ? "visible" : "invisible"}
               />
             </a>
           )}
