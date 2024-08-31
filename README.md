@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Apple Landingpage Clone
 
-Currently, two official plugins are available:
+This project is a clone of the official Apple landing page, created to practice and showcase skills in modern web development. The clone replicates the design, layout, and interactive features of Apple's website using React.js, Tailwind CSS, and Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Demo
+
+[Link Vercel](https://apple-page-clone-eight.vercel.app/)
+
+
+## Screenshots
+
+![Website Screenshot](/public/screenshot.png)
+
+
+## Tech Stack
+
+**Client:** React, TailwindCSS, Framer Motion
+## Authors
+
+- [@malllvinnn](https://github.com/malllvinnn)
+
